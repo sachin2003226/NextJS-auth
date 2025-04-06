@@ -7,7 +7,7 @@ export default function LoginPage() {
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [otp, setOtp] = useState('');
-  const [step, setStep] = useState('email'); // 'email' or 'otp'
+  const [step, setStep] = useState('email'); 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -120,7 +120,7 @@ export default function LoginPage() {
             <form onSubmit={handleVerifyOTP} className="space-y-4 mt-6">
               <div className="text-center mb-4">
                 <p className="text-sm text-gray-600">
-                  We've sent a 6-digit code to <strong>{email}</strong>
+                We&apos;ve sent a 6-digit code to <strong>{email}</strong>
                 </p>
               </div>
               
